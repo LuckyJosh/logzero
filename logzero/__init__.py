@@ -427,7 +427,6 @@ def logfile(filename, formatter=None, mode='a', maxBytes=0, backupCount=0, encod
         logger.addHandler(rotating_filehandler)
 
 
-
 def log_function_call(func):
     @functools.wraps(func)
     def wrap(*args, **kwargs):
