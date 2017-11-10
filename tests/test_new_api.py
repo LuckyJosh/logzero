@@ -174,7 +174,6 @@ def test_api_logfile_custom_lower_loglevel():
             content = f.read()
             assert "] debug1" in content
             assert "] info1" in content
-
             assert "] debug2" in content
             assert "] info2" in content
 
