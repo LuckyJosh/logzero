@@ -342,6 +342,7 @@ def loglevel(level=logging.DEBUG, update_custom_handlers=False):
     :arg int level: Minimum `logging-level <https://docs.python.org/2/library/logging.html#logging-levels>`_ to display (default: `logging.DEBUG`).
     :arg bool update_custom_handlers: If you added custom handlers to this logger and want this to update them too, you need to set `update_custom_handlers` to `True`
     """
+    logger.setLevel(level)
 
     # Reconfigure existing internal handlers
     for handler in list(logger.handlers):
