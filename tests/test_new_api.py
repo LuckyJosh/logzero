@@ -154,7 +154,8 @@ def test_api_logfile_custom_loglevel():
 
 def test_api_logfile_custom_lower_loglevel():
     """
-    logzero.logfile(..) should be able to use a custom loglevel
+    logzero.logfile(..) should be able to use a custom loglevel that is lower than the loglevel
+    specified by `logzero.loglevel(..)`
     """
     logzero.reset_default_logger()
     temp = tempfile.NamedTemporaryFile()
